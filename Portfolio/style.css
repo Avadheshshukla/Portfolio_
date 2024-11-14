@@ -1,0 +1,304 @@
+  *{
+            margin : 0;
+            padding: 0;
+        }
+      body{
+         background-color: rgb(0, 0, 33);
+         color: white;
+         font-family: 'poppins', sans-serif;
+      }
+
+    
+      nav{
+        display: flex;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        align-items: center;
+        justify-content: space-around;
+        height:80px;
+        background-color: rgb(16,16,62);
+      }
+
+      nav ul{
+        display: flex;;
+        justify-content: center;
+
+      }
+
+      nav ul li{
+        list-style: none;
+        margin : 0 24px;
+      }
+
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover{
+        
+        color: rgb(153, 153, 226);
+       font-size: 1.04rem;
+       text-transform: uppercase;
+      }
+
+      main hr{
+      border:0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+      .left{
+          font-size: 3rem;
+          font-family: monotype corsiva;
+          position: relative;
+      }
+
+      
+
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin : 120px 0;
+      }
+
+      .firstSection > div{
+        width : 30%;
+      }
+
+      .leftSection{
+       display: inline;
+        font-size: 2.4rem;
+
+
+      }
+
+      .purple{
+       color: rgb(170, 107, 228);
+      }
+
+      .text-grey{
+        color: grey;
+      }
+
+      #element{
+        color: rgb(170, 107, 228);
+      }
+      .rightSection {
+        width: 100%;
+        max-width: 500px;
+        background-color: transparent;
+    }
+    
+    .rightSection img {
+        margin: 2px 2px;
+        margin-left: 20%;
+        width: 54%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 8%; /* Make the image round */
+    }
+    
+    
+  
+      .secondSection{
+        max-width:80vw;
+        margin: auto;
+        align: center;
+        height: 80vh;
+
+      }
+
+      .secondSection h1{
+        font-size: 1.9rem;
+      }
+
+      .secondSection .box{
+        background:white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+
+      /* ---- About section ----- */
+
+.about-section {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 1.9rem;
+    margin-bottom: 16px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+    .about-content,
+    .about-image {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+.contactSection {
+    background-color: rgb(16, 16, 62);
+    color: white;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .contactSection h1 {
+    font-size: 3.4rem;
+    margin-bottom: 32px;
+  }
+  
+  .contactSection form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label, textarea, input {
+    width: 60%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .contactSection textarea {
+    height: 120px;
+  }
+  
+  /* .contactSection button {
+    background-color: #9c97f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+  } */
+
+   .contactSection button {
+    background-color: #6b4ae2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2 rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+button:hover {
+    background-color: #3cbd35;
+}
+  
+  @media (max-width: 768px) {
+    .contactSection {
+      padding: 40px;
+    }
+  
+    .contactSection h1 {
+      font-size: 1.8rem;
+    }
+  
+    .contactSection form {
+      width: 100%;
+    }
+}
+  
+  
+    footer.footer-section {
+        margin-top: 20px;
+        background-color: antiquewhite;
+        color: black;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    a.footer-link {
+        text-decoration: none;
+        color: crimson;
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    
+/* media queries  */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: initial;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
